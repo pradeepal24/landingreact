@@ -1,0 +1,112 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
+    color: #333;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.h1inhome {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 40px 15px; 
+    background: linear-gradient(135deg, rgba(255, 235, 205, 0.9), rgba(255, 255, 255, 0.7));
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 700px; 
+    width: 100%;
+    z-index: 10;
+    transition: transform 0.6s ease-in-out;
+    
+}
+
+
+.h1inhome h1 {
+    font-size: 2.5rem;
+    color: hsl(256, 23%, 40%);
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    text-transform: capitalize;
+}
+
+
+.h1inhome h2 {
+    font-size: 1.2rem; 
+    color: #5A4E7C;
+    margin-top: 10px;
+    font-weight: 300;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.h1inhome h3 {
+    font-size: 1rem; 
+    color: #4F4A5E;
+    margin-top: 15px; 
+    font-weight: 400;
+    line-height: 1.6;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.h1inhome h3::after {
+    content: 'Explore Destinations';
+    display: inline-block;
+    margin-top: 20px; 
+    padding: 8px 25px;
+    background-color: #6D4C8C;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem; 
+    text-transform: uppercase;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.h1inhome h3::after:hover {
+    background-color: #9B67A1;
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+    .h1inhome h1 {
+        font-size: 2rem; 
+    }
+
+    .h1inhome h2 {
+        font-size: 1.1rem;
+    }
+
+    .h1inhome h3 {
+        font-size: 0.9rem; 
+    }
+
+    .h1inhome h3::after {
+        font-size: 0.9rem; 
+        padding: 6px 18px;
+    }
+}
+.head{
+    margin: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+    text-align: center;
+}

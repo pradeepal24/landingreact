@@ -1,0 +1,36 @@
+.container{
+      background-color: hsl(260, 16%, 96%);
+      padding: 10px;
+      border-radius: 20px;
+      box-shadow: 0 2px 5px rgba(red, green, blue, alpha);
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: fit-content;
+      margin:20px auto;
+}
+.container ul{
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding:0;
+    display: flex;
+    align-items: center;
+    width: 700px;
+}
+.container ul li{
+    color:hsl(256, 23%, 40%);
+    text-decoration: none;
+    padding: 8px 16px;
+    margin:0 10px;
+    font-family: sans-serif;
+}
+.container li:hover{
+    background-color: rgb(215, 223, 224);
+    border-radius: 5px;
+    
+}
+li{
+    font-family: 'Poppins';
+}
+
