@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +9,9 @@
 
 .login {
     margin-top: 150px;
-    margin-left: 650px;
+    
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 200px;
     display: flex;
     border: 1px solid;
@@ -18,8 +21,12 @@
     width: 340px;
     height: 350px;
     padding: 30px;
-    background:rgba(37, 18, 18, 0.3);
+    background: rgba(37, 18, 18, 0.3);
     border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    /* Center the form */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .title {
@@ -50,7 +57,8 @@
     font-weight: 500;
     color: #222;
 }
-.Signin .Signin-1{
+
+.Signin .Signin-1 {
     width: 100%;
     height: 100%;
     padding: 0 25px;
@@ -61,12 +69,61 @@
     outline: none;
     box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.05);
     color: black;
-    transition: .3 ease;
+    transition: .3s ease;
 }
-.Signin-1{
+
+.Signin-1 {
     font-weight: bold;
 }
-.Signin-1:active{
+
+.Signin-1:active {
     background-color: rgb(224, 203, 244);
 }
 
+
+@media (max-width: 768px) {
+    .login {
+        width: 80%;  
+        padding: 20px;
+        margin-top: 100px;
+        height: auto; 
+    }
+
+    .title header {
+        font-size: 24px;
+    }
+
+    .New-name .New-nameIN,
+    .Signin .Signin-1 {
+        font-size: 16px; 
+        padding: 0 15px; 
+    }
+
+    .Signin .Signin-1 {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login {
+        width: 90%;  
+        margin-top: 50px; 
+        height: auto; 
+        padding: 15px; 
+    }
+
+    .title header {
+        font-size: 20px; 
+    }
+
+    .New-name .New-nameIN,
+    .Signin .Signin-1 {
+        font-size: 15px;
+        padding: 0 10px; 
+        margin-bottom: 10px; 
+    }
+
+    .Signin .Signin-1 {
+        margin-top: 10px; 
+    }
+}
